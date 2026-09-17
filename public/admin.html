@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SAVASTU Owner Dashboard</title><link rel="stylesheet" href="/styles.css"></head>
+<body class="admin-body">
+<div id="loginPanel" class="login-wrap"><div class="login-card"><p class="eyebrow">SAVASTU FRAGRANCES</p><h1>Owner Dashboard</h1><p>Manage products, prices, stock and customer orders.</p><form id="loginForm"><input id="user" placeholder="Username" value="admin" required><input id="pass" type="password" placeholder="Password" required><button class="btn gold full">Login</button></form><p id="loginMsg" class="msg"></p></div></div>
+<div id="dashboard" class="dashboard hidden">
+<header class="admin-nav"><div><b>SAVASTU</b><small>OWNER DASHBOARD</small></div><a href="/">View Store</a><button onclick="logout()">Logout</button></header>
+<main class="admin-main">
+<div class="dash-head"><div><p class="eyebrow">CONTROL CENTER</p><h1>Store management</h1></div><div class="stats"><div><b id="productCount">0</b><span>Products</span></div><div><b id="orderCount">0</b><span>Orders</span></div></div></div>
+<section class="admin-grid">
+<div class="panel"><h2>Add perfume</h2><form id="productForm" enctype="multipart/form-data"><input name="name" placeholder="Product name" required><div class="two"><input name="price" type="number" placeholder="Price (Rs.)" required><input name="stock" type="number" placeholder="Stock" value="10"></div><div class="two"><select name="category"><option>Men</option><option>Women</option><option>Unisex</option></select><input name="size" placeholder="Size e.g. 30ml" value="30ml"></div><textarea name="description" placeholder="Product description"></textarea><label class="upload">Product image <input name="image" type="file" accept="image/*"></label><label><input name="featured" type="checkbox" value="true"> Feature on store</label><button class="btn gold full">Upload Product</button></form><p id="productMsg" class="msg"></p></div>
+<div class="panel"><div class="panel-head"><h2>Products</h2><button class="small-btn" onclick="loadProducts()">Refresh</button></div><div id="adminProducts"></div></div>
+</section>
+<section class="panel orders-panel"><div class="panel-head"><h2>Customer orders</h2><button class="small-btn" onclick="loadOrders()">Refresh</button></div><div id="orders"></div></section>
+</main></div><script src="/admin.js"></script></body></html>
