@@ -1,0 +1,78 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Creed Aventus",
+      "category": "Men",
+      "size": "30ml",
+      "price": 1999,
+      "description": "A confident, refined fragrance with a fresh citrus opening and woody undertones.",
+      "image": "swat4.jpeg",
+      "featured": true,
+      "stock": 25
+    },
+    {
+      "id": 2,
+      "name": "Bois Imperial",
+      "category": "Unisex",
+      "size": "30ml",
+      "price": 2800,
+      "description": "A bold blend of woody, fruity and leathery notes with a warm elegant character.",
+      "image": "swat3.jpeg",
+      "featured": true,
+      "stock": 17
+    },
+    {
+      "id": 3,
+      "name": "Janan Sports",
+      "category": "Men",
+      "size": "30ml",
+      "price": 1800,
+      "description": "Fresh citrus energy with a sporty, clean and long-lasting character.",
+      "image": "swat2.jpeg",
+      "featured": true,
+      "stock": 30
+    },
+    {
+      "id": 4,
+      "name": "Sauvage",
+      "category": "Men",
+      "size": "30ml",
+      "price": 1800,
+      "description": "Bold, fresh and timeless with a clean modern fragrance profile.",
+      "image": "swat1.jpeg",
+      "featured": true,
+      "stock": 22
+    }
+  ],
+  "orders": [
+    {
+      "id": "SV-39381360",
+      "createdAt": "2026-09-17T10:03:01.360Z",
+      "status": "Confirmed",
+      "customer": {
+        "name": "DDD",
+        "phone": "DDD",
+        "city": "DDD",
+        "address": "DDD"
+      },
+      "items": [
+        {
+          "id": 2,
+          "name": "Bois Imperial",
+          "price": 2800,
+          "qty": 1
+        }
+      ],
+      "subtotal": 2800,
+      "delivery": 0,
+      "total": 2800
+    }
+  ],
+  "settings": {
+    "brand": "SAVASTU FRAGRANCES",
+    "tagline": "Luxury Scents • Lasting Impressions",
+    "delivery": "All over Pakistan",
+    "payment": "Cash on Delivery"
+  }
+}
